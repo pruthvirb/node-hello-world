@@ -14,7 +14,8 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      npm install -g node@16.19.1
+      npm cache clean --force
+      npm install -g node@16.0.0
 - task: JFrogNpm@1
   inputs:
     command: 'install'
