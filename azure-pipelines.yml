@@ -20,3 +20,7 @@ steps:
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
     includeEnvVars: true
+
+- task: CmdLine@2
+  inputs:
+    script: node -v ; npm -v
