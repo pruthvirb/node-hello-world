@@ -15,13 +15,9 @@ steps:
     command: 'install'
     artifactoryConnection: 'clouddse-token'
     sourceRepo: 'anusha-test-npm'
+    arguments: '--verbose'
     collectBuildInfo: true
     threads: '1'
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
     includeEnvVars: true
-
-- task: CmdLine@2
-  inputs:
-    script: node -v ; npm -v
-    continueOnError: true 
