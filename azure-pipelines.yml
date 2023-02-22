@@ -10,6 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+
+- task: CmdLine@2
+  inputs:
+    script: |
+      nvm install 8.12.0 
+      nvm use 8.12.0
 - task: JFrogNpm@1
   inputs:
     command: 'install'
