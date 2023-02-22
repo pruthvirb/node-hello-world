@@ -14,8 +14,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      nvm install 8.12.0 
-      nvm use 8.12.0
+      npm install -g node@16.19.1
 - task: JFrogNpm@1
   inputs:
     command: 'install'
