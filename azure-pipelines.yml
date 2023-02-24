@@ -20,7 +20,8 @@ steps:
       
       echo 'Hello world'
       node -v; npm -v
-      sudo rm -rf /usr/local/bin/node
+      find / -name "node"
+      which node
       node -v; npm -v
       nvm uninstall 
       npm install -g node@16.0.0
