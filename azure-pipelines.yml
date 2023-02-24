@@ -14,7 +14,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      rm -rf /usr/local/bin/node
+      rm  /usr/local/bin/node
       npm cache clean --force
       npm -v; node -v
       npm install -g node@16.0.0
