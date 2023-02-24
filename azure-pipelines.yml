@@ -16,6 +16,7 @@ steps:
     script: |
       rm -rf /usr/local/bin/node
       npm cache clean --force
+      npm -v; node -v
       npm install -g node@16.0.0
 - task: JFrogNpm@1
   inputs:
