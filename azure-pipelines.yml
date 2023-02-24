@@ -11,18 +11,11 @@ pool:
 
 steps:
 
-
-- task: Bash@3
+- task: NodeTool@0
   inputs:
-    targetType: 'inline'
-    script: |
-      # Write your commands here
-      
-      echo 'Hello world'
-      node -v; npm -v
-      which node
-      node -v; npm -v
-      sudo cp /home/vsts/agents/3.217.1/externals/node /usr/local/bin/node
+    versionSpec: '16.x'
+  displayName: 'Install Node.js'
+
 - task: JFrogNpm@1
   inputs:
     command: 'install'
