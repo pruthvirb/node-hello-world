@@ -20,11 +20,9 @@ steps:
       
       echo 'Hello world'
       node -v; npm -v
-      find / -name "node"
       which node
       node -v; npm -v
-      nvm uninstall 
-      npm install -g node@16.0.0
+      sudo cp /home/vsts/agents/3.217.1/externals/node /usr/local/bin/node
 - task: JFrogNpm@1
   inputs:
     command: 'install'
