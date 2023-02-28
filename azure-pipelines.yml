@@ -12,7 +12,7 @@ pool:
 steps:
 - task: JFrogToolsInstaller@1
   inputs:
-    artifactoryConnection: 'cloud'
+    artifactoryConnection: 'clouddse-token'
     cliInstallationRepo: 'jf-remote'
     installCustomVersion: true
     cliVersion: '2.34.5'
