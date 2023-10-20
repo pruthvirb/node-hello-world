@@ -16,7 +16,7 @@ steps:
 - task: JFrogNpm@1
   inputs:
     command: 'install'
-    artifactoryConnection: 'hts2-accesstoken'
+    artifactoryConnection: 'hts2-reftoken'
     sourceRepo: 'ashritha-npm-virtual'
     collectBuildInfo: true
     threads: '1'
